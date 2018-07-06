@@ -13,6 +13,7 @@
 		E022EF5320EEE0F40037E298 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E022EF5220EEE0F40037E298 /* Assets.xcassets */; };
 		E022EF5620EEE0F40037E298 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E022EF5420EEE0F40037E298 /* LaunchScreen.storyboard */; };
 		E022EF5920EEE0F40037E298 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E022EF5820EEE0F40037E298 /* main.m */; };
+		E022EF6220EEF1540037E298 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E022EF6020EEEB4A0037E298 /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E022EF5520EEE0F40037E298 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E022EF5720EEE0F40037E298 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E022EF5820EEE0F40037E298 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E022EF6020EEEB4A0037E298 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E022EF6220EEF1540037E298 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +47,7 @@
 			children = (
 				E022EF4820EEE0ED0037E298 /* lie */,
 				E022EF4720EEE0ED0037E298 /* Products */,
+				E022EF5F20EEEB4A0037E298 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +73,14 @@
 				E022EF5820EEE0F40037E298 /* main.m */,
 			);
 			path = lie;
+			sourceTree = "<group>";
+		};
+		E022EF5F20EEEB4A0037E298 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E022EF6020EEEB4A0037E298 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +109,9 @@
 		E022EF3E20EEE0EC0037E298 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = oriable;
 				TargetAttributes = {
@@ -289,6 +304,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = imperial.lie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -305,6 +321,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = imperial.lie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
